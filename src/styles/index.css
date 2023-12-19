@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Recoleta';
+  src: url('../../font/Recoleta-RegularDEMO.otf');
+}
+
+@font-face {
+  font-family: 'RecoletaBold';
+  src: url('../../font/Recoleta-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'sans-lt';
+  src: url('../../font/SctoGroteskA-Light.otf');
+}
+
+/* hide double scrollbar on mac */
+@media only screen and (min-width: 600px) {
+  html {
+    overflow: hidden;
+  }
+}
+
+body {
+  height: 100vh !important;
+  overflow-y: scroll !important;
+}
+
+.login-main,
+.verify-main {
+  background-image: url('../assets/images/login-background.png');
+  background-repeat:no-repeat;
+  background-position:00px 600px;
+  background-size:950px 400px;
+}
+.otp-input {
+  width: 47px !important;
+}
+
+@media screen and (min-width: 1024px) {
+  .login-main,
+  .verify-main {
+    background-image:url('../assets/images/login-background.png');
+    background-repeat:no-repeat;
+    background-position:0px 350px;
+    background-size:100% 550px;
+  }
+
+  .login-image {
+    background-image: url('../assets/images/login-background2.png'), url('../assets/images/login-background3.png'),
+      url('../assets/images/login-background4.png');
+    background-repeat: no-repeat;
+    background-position: 260px 0px, 5px -80px, 250px 0px;
+    background-size: 30% 890px, 100% 650px, 30% 44%;
+  }
+
+  .verify-image {
+    background-image: url('../assets/images/login-background2.png'), url('../assets/images/login-background3.png'),
+      url('../assets/images/login-background4.png');
+    background-repeat: no-repeat;
+    background-position: 190px 0px, 5px -80px, 180px 0px;
+    background-size: 34% 894px, 100% 600px, 29% 44%;
+  }
+
+  .otp-input {
+    width: 56px !important;
+  }
+}
+
+.success-page {
+  background-image: url('../assets/images/success-background.png');
+  background-repeat: no-repeat;
+  background-position: 25%;
+}
+
+.goal-type-card {
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-image: url('data:image/svg+xml, %0A%3Csvg%20width%3D%2253%22%20height%3D%22170%22%20viewBox%3D%220%200%2053%20170%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M20.0433%201L37.3689%2026.2843L20.0433%2051.5686M51.9993%2020.6656L1.17773%2094.8328L51.9993%20169%22%20stroke%3D%22%23BCD7DE%22%20stroke-opacity%3D%220.5%22%20stroke-width%3D%221.5%22%20stroke-dasharray%3D%223%203%22%2F%3E%0A%3C%2Fsvg%3E%0A');
+}
+
+.review {
+  background-image: url('../assets/images/dashboard-images/savings-review.png');
+  background-position: right 0% bottom 100%;
+  background-repeat: no-repeat;
+}
+.savingsGoalFull {
+  background-image: url('../assets/images/dashboard-images/savingsGoalFull.png');
+  background-position: right 0% bottom 100%;
+  background-repeat: no-repeat;
+}
+
+.addedPaymentMethod {
+  background-image: url('../assets/images/dashboard-images/savings-review.png');
+  background-position: right 0% bottom 100%;
+  background-repeat: no-repeat;
+}
+.savingsListCard {
+  background-image: url('../assets/images/dashboard-images/savingsGoalFull.png');
+  background-position: right 0% bottom 100%;
+  background-repeat: no-repeat;
+}
+
+/* .invest {
+  background-image: url('../assets/images/dashboard-images/invest-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+
+.savingCardOdd {
+  background-image: url('../assets/images/dashboard-images/savingsGoal-2.png');
+  background-position: right 0% bottom 100%;
+  background-repeat: no-repeat;
+  background-color: rgba(235, 243, 245, 1);
+}
+
+@media only screen and (max-height: 700px) {
+  .sidebar-items-list {
+    max-height: 200px;
+  }
+  .toolTip {
+    width: 270px !important;
+  }
+}
+
+.toolTip {
+  background-color: white !important;
+  border: 2px solid #ecf1f4 !important;
+  border-radius: 10px !important;
+  position: absolute !important;
+  min-width: 350px !important;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 12px 12px;
+  border-color: transparent transparent #ecf1f4;
+  position: relative;
+}
+.triangle:after {
+  content: '';
+  border-style: solid;
+  border-width: 0 10px 10px;
+  border-color: transparent transparent white;
+  position: absolute;
+  top: 2px;
+  left: -10px;
+}
+
+.rate-button {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease-in-out;
+}
+
+.rate-button :hover {
+  transform: scale(1.2);
+  text-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
+}
+
+.bezoWallet {
+  background: url('../assets/images/dashboard-images/bezo-wallet.png'), linear-gradient(to right, #00aa77, #23d789);
+  background-position: right 0 bottom 0;
+  background-repeat: no-repeat;
+}
+@keyframes animateCard {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.welcome-card {
+  animation: animateCard 2s infinite 0s ease-in-out;
+}
+.welcome-card:hover {
+  animation: animateCard 0s;
+}
+
+@keyframes qatarCard {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.qatar-card {
+  animation: qatarCard 2s infinite 0s ease-in-out;
+}
+
+.campaign {
+  background-image: url('../assets/images/campaign-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,44 @@
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/coupons/"
+  to = "/dashboard/coupon"
+  status = 200
+
+[[redirects]]
+  from = "/referrals/"
+  to = "/dashboard/referrals"
+  status = 200
+
+[[redirects]]
+  from = "/settings/"
+  to = "/dashboard/settings"
+  status = 200
+
+[[redirects]]
+  from = "/goals/"
+  to = "/dashboard/savings"
+  status = 200
+
+[[redirects]]
+  from = "/accounts"
+  to = "/dashboard/savings"
+  status = 200
+
+[[redirects]]
+  from = "/transactions"
+  to = "/dashboard/transactions"
+  status = 200
+
+[[redirects]]
+  from = "/user/complete-profile"
+  to = "/dashboard/settings"
+  status = 200
+
+[[redirects]]
+  from = "/complete-profile/id"
+  to = "/dashboard/settings"
+  status = 200
